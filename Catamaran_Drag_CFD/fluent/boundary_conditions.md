@@ -59,7 +59,7 @@ This represents an open-water far-field condition.
 - Shear condition: No-slip
 - Roughness: Smooth wall (zero roughness height)
 
-The hull is assumed rigid and fully submerged with no structural motion.
+The hull is assumed rigid with submerged volume and surface area with no structural motion.
 
 ---
 
