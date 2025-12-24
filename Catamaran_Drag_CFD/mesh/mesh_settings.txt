@@ -1,0 +1,48 @@
+MESH SETTINGS – CATAMARAN CFD (ANSYS Meshing)
+
+1. Global Mesh
+----------------
+- Mesh method            : Tetrahedral (Patch Conforming)
+- Global element size    : 0.5 m
+- Relevance center       : Fine
+- Smoothing              : Medium
+- Transition             : Slow
+
+2. Body of Influence (Fine Region)
+----------------------------------
+- Type                   : Body Sizing (Body of Influence)
+- Geometry selection     : Global fluid domain
+- Influence body         : Catamaran hull
+- Element size           : 0.5 m
+- Purpose                : Maintain controlled refinement near hull region
+
+3. Edge Sizing (Hull Edges)
+---------------------------
+- Type                   : Edge Sizing
+- Geometry selection     : Catamaran vessel edges
+- Element size           : 7.5e-03 m
+- Behavior               : Hard
+- Purpose                : Capture hull curvature and sharp geometric features
+
+4. Inflation Layers (Boundary Layer Resolution)
+-----------------------------------------------
+- Type                   : Inflation
+- Geometry selection     : Catamaran surface
+- Maximum first layer    : 1.3e-05 m
+- Number of layers       : 15
+- Growth rate            : 1.2
+- Inflation option       : Smooth Transition
+- Purpose                : Resolve near-wall flow (target y+ ≈ 1)
+
+5. Named Selections
+------------------
+- inlet                  : Velocity inlet
+- outlet                 : Pressure outlet
+- symmetry               : Symmetry plane (free surface / lateral domain)
+- wall                   : Catamaran hull surface
+
+6. Notes
+--------
+- Mesh designed for low-speed incompressible flow (U ≤ 2 m/s)
+- Compatible with k-ω SST turbulence model
+- Inflation chosen to support near-wall resolution without wall functions
