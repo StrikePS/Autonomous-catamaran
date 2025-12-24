@@ -1,8 +1,8 @@
 # Catamaran Hull Geometry
 
-## File
-- 'Catamaran_DemiHull.step'
-- 'Catamaran_CFD_DOMAIN.disco'
+## Folder
+- 'Catamaran_DemiHull'
+- 'Catamaran_CFD_DOMAIN'
 
 ## Units
 - All dimensions are in **meters**
@@ -11,9 +11,9 @@
 - Geometry corresponds to a **2.0 m length** catamaran model
 
 ## Coordinate System
-- X → longitudinal (forward)
-- Y → transverse (starboard positive)
-- Z → vertical (upwards)
+-X: Forward → Aft (along vessel length)
+-Y: Port → Starboard
+-Z: Upwards
 
 Origin located at:
 - Midship
@@ -22,9 +22,10 @@ Origin located at:
 
 ## Geometry Description
 - Two identical demi-hulls
-- Symmetric about X = 0.368 plane
+- Symmetric about X = 0 plane
 - Sharp bow, transom stern
 - No appendages (rudders, props removed)
+- Total outer surface area = 1.6593 sq.m
 
 ## Wetted Surface
 - Designed draft ≈ XX m
