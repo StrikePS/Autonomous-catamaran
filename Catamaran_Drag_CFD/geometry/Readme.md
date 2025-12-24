@@ -30,6 +30,7 @@ Origin located at:
 - Designed draft ≈ XX m
 - Only submerged portion considered for CFD
 - Deck and superstructure excluded
+- Wetted Surface area = 1.2791 sq.m
 
 ## Simplifications
 - No surface roughness modeled
@@ -39,3 +40,5 @@ Origin located at:
 ## CAD Source
 - Originally modeled in Fusion 360
 - Exported as STEP for CFD
+- STEP imported in ANSYS Discovery
+- Created fluid domain for meshing and fluent simulation
