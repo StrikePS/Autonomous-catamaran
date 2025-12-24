@@ -1,8 +1,8 @@
 # Catamaran Hull Geometry
 
 ## File
-- 'hull.step'
-- 'ansys_geometry.disco'
+- 'Catamaran_DemiHull.step'
+- 'Catamaran_CFD_DOMAIN.disco'
 
 ## Units
 - All dimensions are in **meters**
