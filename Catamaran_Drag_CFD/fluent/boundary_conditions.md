@@ -23,7 +23,7 @@ The simulation models steady incompressible flow of water past a fixed catamaran
 
 ---
 
-## Inlet
+## Inlet (Blue)
 
 - Boundary type: Velocity Inlet
 - Velocity magnitude:
@@ -39,7 +39,7 @@ The simulation models steady incompressible flow of water past a fixed catamaran
 
 ---
 
-## Outlet
+## Outlet (Red)
 
 - Boundary type: Pressure Outlet
 - Gauge pressure: 0 Pa
@@ -52,7 +52,7 @@ This represents an open-water far-field condition.
 
 ---
 
-## Walls (Hull Surface)
+## Walls (Hull Surface, White)
 
 - Boundary type: Wall
 - Motion: Stationary
@@ -63,7 +63,7 @@ The hull is assumed rigid with submerged volume and surface area with no structu
 
 ---
 
-## Symmetry
+## Symmetry (Yellow)
 
 - Boundary type: Symmetry
 - Applied on:
