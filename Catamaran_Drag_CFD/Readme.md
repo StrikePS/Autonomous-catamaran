@@ -8,11 +8,11 @@ This file presents ANSYS Fluent Simulations of our autonomous catamaran to estim
 - Provide reproducible CFD settings
 
 ## Geometry
-- Catamaran hull length: X m
+- Catamaran hull length: 2 m
 - Draft: Y m
 - Simulation assumes calm water, no waves
 
-## CFD Setup
+## CFD Setup (fluent)
 - Solver: Pressure-based, steady
 - Turbulence: k–ω SST
 - y+ ≈ 1 with inflation layers
@@ -20,7 +20,7 @@ This file presents ANSYS Fluent Simulations of our autonomous catamaran to estim
 
 ## Results
 - Drag increases quadratically with velocity
-- Fitted model: D = aV + bV²
+- Fitted model: D = $k*V^{2}$
 
 ## Applications
 - MATLAB control simulations
